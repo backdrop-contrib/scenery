@@ -306,30 +306,6 @@ pre {
   max-width: 100%;
 }
 
-
-/** experimental primary tabs **/
-/*
-nav.tabs {
-  display: table;
-  position: relative;
-}
-ul.primary li {
-  float: left;
-  margin: 0;
-}
-ul.primary li a {
-  width: 64px;
-  height: 64px;
-  overflow: hidden;
-  padding: 0;
-  text-indent: -333px;
-  border: none !important;
-  opacity: .5;
-}
-ul.primary li a:hover {
-  opacity: 1;
-}
-*/
 ul.primary {
   margin: 0 auto;
 }
@@ -382,32 +358,7 @@ ul.secondary a:hover,
 ul.secondary li.active a {
   background: #f4f4f4;
 }
-/*
-ul.primary li a.active {
-  background-color: #fafafa;
-  opacity: 1;
-  position: relative;
-  outline: 3px solid;
-  z-index: 1;
-}
-@media (min-width: 1300px) {
-  nav.tabs {
-    display: block;
-  }
-  ul.tabs.primary {
-    position: absolute;
-    top: 0;
-    left: -90px;
-    margin: 0;
-    z-index: 50;
-  }
-  ul.primary li {
-    float: none;
-  }
-}
-*/
 /** primary tabs end **/
-
 
 .links.inline,
 .tabs,
