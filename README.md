@@ -1,4 +1,4 @@
-# Snazzy
+# Scenery
 
 Adaptable theme with different sceneries, easy to configure, easy to extend with custom CSS.
 
