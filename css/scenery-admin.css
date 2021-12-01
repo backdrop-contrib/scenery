@@ -1,0 +1,50 @@
+/**
+ * CSS for the theme's setting page.
+ */
+#edit-scenery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#edit-scenery .form-item {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 0;
+}
+#edit-scenery label {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ddd;
+  background-size: cover;
+  padding: 52px 5px 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+  border: 2px solid #fff;
+}
+#edit-scenery label:hover {
+  box-shadow: 0 0 0 4px #bbb;
+}
+#edit-scenery input:checked + label {
+  box-shadow: 0 0 0 4px #43c0f0;
+  text-decoration: underline;
+}
+#edit-scenery-1 + label {
+  background-image: url("../img/preview/scenery-1-preview.jpg");
+}
+#edit-scenery-2 + label {
+  background-image: url("../img/preview/scenery-2-preview.jpg");
+}
+#edit-scenery-3 + label {
+  background-image: url("../img/preview/scenery-3-preview.jpg");
+}
+#edit-scenery-4 + label {
+  background-image: url("../img/preview/scenery-4-preview.jpg");
+  color: #975757;
+}

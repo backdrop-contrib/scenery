@@ -1,0 +1,104 @@
+/**
+ * @file
+ * Fieldsets styling.
+ */
+fieldset {
+  font-size: 1rem;
+  position: relative;
+  max-width: 100%;
+  min-width: 0;
+  margin: 1rem 0;
+  padding: 0 0 1em;
+  display: block;
+  border: 1px solid #bbb;
+}
+fieldset legend {
+  float: left;
+  width: 100%;
+  position: relative;
+  font-size: 1.2rem;
+}
+fieldset .fieldset-wrapper {
+  clear: both;
+}
+fieldset .fieldset-wrapper::before {
+  content: "";
+  display: block;
+  height: 1px;
+}
+fieldset:not(.collapsible) legend {
+  padding: 10px 15px;
+}
+.fieldset-description {
+  margin: 0 0 0.5em;
+  padding: 0.5em 0.1875em;
+}
+.collapsible > .fieldset-wrapper > .fieldset-description {
+  margin: 0 0 0.5em;
+  padding: 0.5em 1.5625em;
+}
+/**
+ * Collapsible Fieldsets
+ */
+fieldset .fieldset-wrapper {
+  padding: 0 10px 10px 15px; /* LTR */
+}
+[dir="rtl"] fieldset .fieldset-wrapper {
+  padding: 0 15px 10px 10px;
+}
+.js fieldset.collapsible .fieldset-title {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 0.3em 0.3em 0.3em 1.8em;
+  margin: 0;
+  background: transparent;
+  text-decoration: none;
+}
+.js[dir="rtl"] fieldset.collapsible .fieldset-title {
+  padding: 0.3em 1.8em 0.3em 0.3em;
+  background: transparent;
+}
+.js fieldset.collapsible .fieldset-legend a:before {
+  content: "";
+  position: absolute;
+  left: 0.6em;
+  top: 0.8em;
+  width: 0;
+  height: 0;
+  border: 4px solid currentColor;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(45deg);
+}
+.js[dir="rtl"] fieldset.collapsible .fieldset-legend a:before {
+  right: 0.6em;
+  left: auto;
+}
+.fieldset-legend span.summary {
+  position: absolute;
+  top: .4em;
+  right: 2em;
+  display: none;
+}
+.fieldset-legend span.summary:not(:empty):before {
+  content: '(';
+}
+.fieldset-legend span.summary:not(:empty):after {
+  content: ')';
+}
+@media (min-width: 34em) {
+  .fieldset-legend span.summary {
+    display: block;
+  }
+}
+/* Collapsed state styles */
+.js fieldset.collapsed {
+  padding: 0;
+}
+.js fieldset.collapsed .fieldset-legend a:before {
+  -webkit-transform:
+    rotate(-45deg);
+  transform:
+    rotate(-45deg);
+}

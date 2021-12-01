@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Manuale';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/Manuale-ExtraBoldItalic.eot'); /* Old IE */
+  src:
+    url('../fonts/Manuale-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Manuale-ExtraBoldItalic.woff2') format('woff2'),
+    url('../fonts/Manuale-ExtraBoldItalic.woff') format('woff'),
+    url('../fonts/Manuale-ExtraBoldItalic.ttf') format('truetype'),
+    url('../fonts/Manuale-ExtraBoldItalic.svg#Manuale-ExtraBoldItalic') format('svg');
+}

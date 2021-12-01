@@ -1,0 +1,20 @@
+name = Scenery
+description = Adaptable theme with different sceneries, easy to configure, easy to extend with custom CSS.
+type = theme
+backdrop = 1.x
+
+stylesheets[all][] = css/manuale-font.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/fieldset.css
+stylesheets[all][] = css/backdrop-form.css
+stylesheets[all][] = css/vertical-tabs.css
+stylesheets[all][] = css/comment.css
+
+ckeditor_stylesheets[] = css/style.css
+
+scripts[] = js/scenery.js
+
+settings[scenery] = '1'
+settings[customize] = FALSE
+settings[image] = 0
+settings[css] = ''

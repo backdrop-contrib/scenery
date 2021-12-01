@@ -1,0 +1,427 @@
+/**
+ * @file
+ * Backdrop form styling.
+ */
+.form-required {
+  color: #f00;
+}
+.form-item,
+.ui-widget,
+.ui-dialog *,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: 'Open Sans', verdana, sans-serif;
+}
+.image-library-choose-file,
+.image-library-choose-file:hover {
+  margin: 5px;
+  border-radius: 0;
+}
+.form-item,
+.field-name-comment-body {
+  padding: 0;
+  margin: 0 0 1.5em;
+}
+td .form-item {
+  margin: 0;
+}
+.form-type-email label,
+.form-type-file label,
+.form-type-password label,
+.form-type-select label,
+.form-type-textarea label,
+.form-type-textfield label {
+  display: block;
+  margin: 0 0 0.25em;
+}
+abbr.form-required,
+abbr.tabledrag-changed,
+abbr.ajax-changed {
+  text-decoration: none;
+  padding: 0 4px;
+}
+tr.selected td {
+  background-color: #ffff0026;/* No color module switch. */
+}
+.form-item-radios label,
+.form-item-checkboxes label {
+  display: block;
+  margin: 0 0 0.8em;
+}
+.form-item-radio label,
+.form-radios label,
+.form-item-checkbox label,
+.form-checkboxes label {
+  display: inline-block;
+  font-weight: 400;
+  margin: 0;
+}
+.form-radios .form-item:last-child,
+.form-checkboxes .form-item:last-child {
+  margin: 0;
+}
+.filter-wrapper .form-item,
+.teaser-checkbox .form-item,
+.form-item .form-item {
+  padding: 0.2em 0;
+  margin: 0;
+  border: 0;
+}
+.form-type-checkbox {
+  padding: 0;
+}
+.text-format-wrapper .form-item {
+  padding-bottom: 0;
+}
+.form-item label {
+  margin: 0 0 0.625em;
+}
+.field-label label {
+  margin: 0;
+  padding: 0;
+}
+.form-item input.form-radio,
+.form-item input.form-checkbox {
+  vertical-align: middle;
+  margin-right: 0.3125em;
+}
+td.checkbox .form-item input {
+  margin: 0;
+}
+/* Filter */
+.filter-wrapper {
+  margin: 0 0 1.2em;
+  border-top: 0;
+  padding: 0 0 1em;
+}
+.filter-wrapper legend {
+  font-size: 1rem;
+}
+.filter-wrapper .fieldset-wrapper::before {
+  height: 10px;
+}
+.filter-wrapper .form-item,
+.filter-wrapper .filter-guidelines,
+.filter-wrapper .filter-help {
+  font-size: 0.923em;
+  padding: 0.125em 0 0 0;
+}
+.filter-wrapper .form-item label {
+  font-weight: normal;
+}
+.form-item-radios .description,
+.form-item-checkboxes .description {
+  margin-top: 0.375em;
+}
+.resizable-textarea + .description,
+.form-item-date .description,
+.form-item-select .description {
+  margin-top: 0.875em;
+}
+.field-suffix {
+  display: block;
+  padding: 0.5em 0 0;
+}
+.field-suffix .machine-name-value {
+  display: inline-block;
+  margin: 0 0.5em;
+  padding: 0.375em;
+  font-family: Consolas, 'Lucida Console', 'Courier New', monospace;
+}
+.password-strength {
+  padding-top: 0.375em;
+}
+ul.tips {
+  margin: 0.25em 0.25em 0;
+  padding: 0 1em;
+}
+input.form-submit,
+button.form-submit,
+.button {
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.025em;
+  line-height: 2.3em;
+  border: 0;
+  padding: 1px 20px;
+  margin-bottom: 1em;
+  margin-right: 1em; /* LTR */
+}
+[dir="rtl"] input.form-submit,
+[dir="rtl"] .button {
+  margin-left: 1em;
+  margin-right: 0;
+}
+.form-managed-file input.form-submit {
+  margin-left: 0.5em; /* LTR */
+  position: relative;
+  top: 0.0625em;
+}
+[dir="rtl"] .form-managed-file input.form-submit {
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+}
+input.form-autocomplete,
+input.form-text,
+input.form-tel,
+input.form-date,
+input.form-time,
+input.form-email,
+input.form-url,
+input.form-color,
+input.form-number,
+input.form-search,
+input.form-file,
+select.form-select,
+textarea.form-textarea {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 0;
+  color: #333;
+  background-color: #fff;
+}
+input.form-text,
+input.form-date,
+input.form-time,
+input.form-email,
+input.form-url,
+input.form-search,
+textarea.form-textarea {
+  max-width: 100%;
+}
+/* De-emphasize the text format */
+select.filter-list {
+  padding: 0.125em 0.5em;
+  margin-left: 0.3125em; /* LTR */
+}
+[dir="rtl"] select.filter-list {
+  margin-left: 0;
+  margin-right: 0.3125em;
+}
+input.form-text:focus,
+input.form-tel:focus,
+input.form-date:focus,
+input.form-time:focus,
+input.form-email:focus,
+input.form-url:focus,
+input.form-color:focus,
+input.form-number:focus,
+input.form-search:focus,
+input.form-file:focus,
+select:focus,
+textarea.form-textarea:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px #a5cad9;
+}
+#autocomplete {
+  border-top: 0;
+  box-sizing: content-box;
+}
+#autocomplete ul {
+  margin: 0;
+}
+#autocomplete li {
+  padding: 0.2em 0.625em;
+  margin: 0;
+}
+ul.action-links {
+  margin: 1em 0;
+  padding: 0 1.25em 0; /* LTR */
+  list-style-type: none;
+  overflow: hidden;
+}
+ul.action-links li {
+  float: left; /* LTR */
+  margin: 0 1em 0 0; /* LTR */
+}
+[dir="rtl"] ul.action-links li {
+  float: right;
+  margin: 0 0 0 1em;
+}
+
+.button,
+input.form-submit,
+input.button-primary,
+button.button-primary,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: none;
+  border-radius: 0;
+  outline: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+.button:hover,
+.button:focus,
+input.form-submit:hover,
+input.form-submit:focus,
+input.button-primary:hover,
+input.button-primary:focus,
+button.button-primary:hover,
+button.button-primary:focus,
+.ui-state-default:hover,
+.ui-state-default:focus,
+.ui-widget-content .ui-state-default:hover,
+.ui-widget-content .ui-state-default:focus,
+.ui-widget-header .ui-state-default:hover,
+.ui-widget-header .ui-state-default:focus {
+  border: none;
+  border-radius: 0;
+  outline: 1px solid #f4f4f4;
+}
+a.form-delete,
+input.button-danger,
+button.button-danger {
+  color: #fff;
+  background: url("../img/danger.png");
+}
+a.form-delete:hover,
+a.form-delete:focus,
+input.button-danger:hover,
+input.button-danger:focus,
+button.button-danger:hover,
+button.button-danger:focus {
+  color: #fff;
+  box-shadow: 0 0 0 3px #d66c6c;
+}
+a.form-delete:hover,
+a.form-delete:focus,
+input.button-danger:hover,
+input.button-danger:focus,
+button.button-danger:hover,
+button.button-danger:focus {
+  text-decoration: none;
+}
+.form-item .description,
+.password-strength,
+.password-match {
+  border: none;
+  font-size: 0.9rem;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 5px 0;
+}
+.dropbutton li {
+  margin: 0;
+}
+.draggable td {
+  position: relative;
+}
+.draggable abbr.warning::before {
+  content: "";
+  display: block;
+  background-color: #fce400;/* Same as core, no color module switch. */
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+}
+tr.drag-previous td {
+  background-color: #ffff0026;/* No color module switch. */
+}
+.draggable a.tabledrag-handle {
+  margin-left: -0.4em;
+}
+a.tabledrag-handle .handle {
+  margin: -0.2em 0.5em;
+}
+.admin-dblog .dblog-error.even:not(:hover) .active,
+.admin-dblog .dblog-error.odd:not(:hover) .active {
+  background-color: inherit;
+}
+.admin-dblog .dblog-error.even td,
+.admin-dblog .dblog-error.odd td,
+.admin-dblog .dblog-error.even:hover td,
+.admin-dblog .dblog-error.odd:hover td {
+  background-color: #ff000021 !important;/* No color module switch. */
+}
+.admin-path tr:hover td {
+  background-color: #ffff003b;
+}
+.js .dropbutton-widget {
+  border-color: #bbb;
+  border-radius: 0;
+  min-width: 6em;
+}
+.dropbutton-action a {
+  color: currentColor;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.search-block-form > div {
+  display: flex;
+  margin: 0 0 1rem;
+}
+.search-block-form div * {
+  margin: 0;
+}
+.search-block-form .form-submit {
+  height: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.node-preview-container {
+  background: #fff;
+}
+.node-preview-banner-form .form-item-view-mode label {
+  display: inline;
+}
+.node-preview-container form {
+  padding: 1rem;
+}
+@media (min-width: 960px) {
+  .node-preview-container {
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid #bbb;
+    box-shadow: 0 0 4px #0003;
+  }
+  .node-preview-container form {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  [dir=rtl] .node-preview-container {
+    left: auto;
+    right: 0;
+  }
+}
+.progress .filled {
+  background: #ccc url("../img/progress-g.png");
+  animation: slide 10s linear infinite;
+}
+@keyframes slide {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+fieldset input.form-autocomplete {
+  max-width: 400px;
+}
+@media (max-width: 660px) {
+  .js input.form-autocomplete {
+    max-width: 300px;
+  }
+}
+a.tabledrag-handle .handle {
+  background: url(../img/icons/grippie.svg) no-repeat 6px 7px;
+}

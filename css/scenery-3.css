@@ -1,0 +1,98 @@
+/* bluish */
+body {
+  color: #555;
+}
+a {
+  color: #517493;
+}
+a:hover {
+  color: #5d82ac;
+}
+.l-header {
+  background: #95b3cf url("../img/scenery-3.png") 50% 0% no-repeat;
+  background-size: cover;
+}
+.menu-dropdown ul {
+  background: #7c9abe;
+}
+.block-hero {
+  background-color: #fff;
+  color: #829195;
+}
+.l-footer {
+  background-color: #325374;
+}
+.l-header .block-content,
+.l-header .block-content a {
+  color: #192022;
+}
+.site-name span {
+  color: #eaecec;
+  text-shadow: 2px 2px 6px #2e497b;
+}
+.l-header .block-content,
+.l-header .block-content a {
+}
+.l-header .menu-dropdown a {
+  background-color: #fffa;
+  color: #000;
+}
+.header-menu .links a:hover {
+  outline: 1px solid;
+}
+.l-page-title .page-title {
+  color: #828b95;
+}
+.l-page-title {
+  border-bottom: 1px solid #828b95;
+}
+h1,
+h2 {
+  color: #828b95;
+}
+.l-footer,
+.l-footer a,
+.l-footer h2 {
+  color: #fff;
+}
+.comment-header::before {
+  background: #647486;
+}
+.button,
+input.form-submit,
+input.button-primary,
+button.button-primary,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  color: #fff;
+  background-color: #325374;
+}
+.button:hover,
+.button:focus,
+input.form-submit:hover,
+input.form-submit:focus,
+input.button-primary:hover,
+input.button-primary:focus,
+button.button-primary:hover,
+button.button-primary:focus,
+.ui-state-default:hover,
+.ui-state-default:focus,
+.ui-widget-content .ui-state-default:hover,
+.ui-widget-content .ui-state-default:focus,
+.ui-widget-header .ui-state-default:hover,
+.ui-widget-header .ui-state-default:focus {
+  color: #fff;
+  background-color: #4a6f95;
+  box-shadow: 0 0 0 3px #4a6f95;
+}
+
+.pager li a {
+  background-color: #325374;
+  color: #fff;
+}
+.pager li a:hover,
+.pager li a:focus {
+  background-color: #4a6f95;
+  box-shadow: 0 0 0 3px #4a6f95;
+}
