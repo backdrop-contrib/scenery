@@ -8,6 +8,20 @@ img {
   height: auto;
   vertical-align: bottom;
 }
+.layout,
+.layout-flexible-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.admin-bar .layout,
+.admin-bar .layout-flexible-content {
+  min-height: calc(100vh - 33px);
+}
+.layout .l-wrapper,
+.layout-flexible-content .flexible-row:nth-last-child(2) {
+  flex-grow: 1;
+}
 .menu-dropdown ul {
   border: none;
 }
