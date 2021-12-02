@@ -5,6 +5,9 @@
 .form-required {
   color: #f00;
 }
+label {
+  font-weight: bold;
+}
 .form-item,
 .ui-widget,
 .ui-dialog *,

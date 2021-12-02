@@ -110,7 +110,6 @@ function scenery_menu_local_task($variables) {
   $options = $link['localized_options'];
   $options['attributes'] = array(
     'class' => array(end($path)),
-    'title' => $link['title'],
   );
   $html_link = l($link_text, $link['href'], $options);
 

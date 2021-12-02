@@ -498,3 +498,12 @@ img.align-center {
 .user-picture {
   width: 2.5em;
 }
+.node-readmore a::before {
+  content: "";
+  display: inline-block;
+  background: currentColor;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  clip-path: polygon(0 0, 3px 50%, 0 100%, 100% 50%);
+}
