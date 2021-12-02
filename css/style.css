@@ -26,8 +26,20 @@ img {
   border: none;
 }
 .block-hero {
-  padding: 8vh 5vw;
-  margin: -1px 0 1.5rem;
+  margin: -1px -0.9375rem 3vh -0.9375rem;
+  padding: 8vh 0.9375rem;
+}
+.block-hero > h2,
+.block-hero .block-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.flexible-row .block-hero > h2,
+.flexible-row .block-hero .block-content {
+  max-width: 1170px;
+}
+.block-hero .block-title {
+  text-align: center;
 }
 @media (min-width: 34em) {
   .container {
@@ -45,20 +57,21 @@ img {
   }
   .block-hero {
     margin: -1px -5vw 3vh -5vw;
+    padding: 8vh 5vw;
+  }
+  .flexible-row .block-hero {
+    margin: -1px -0.9375rem 3vh -0.9375rem;
   }
 }
-.block-hero > h2,
-.block-hero .block-content {
-  max-width: 1200px;
-  margin: 0 auto;
+@media (min-width: 1025px) {
+  .block-hero {
+    font-size: 150%;
+  }
+  .block-hero .contextual-links {
+    font-size: initial;
+  }
 }
-.block-hero .block-title {
-  text-align: center;
-}
-.l-flexible-row .block-hero {
-  margin: 0 -0.9375rem 3vh -0.9375rem;
-  padding: 8vh calc(12vw + 0.9375rem);
-}
+
 .l-wrapper,
 .flexible-row {
   background-color: #f8f8f8;
@@ -76,12 +89,14 @@ article:not(.comment) {
   margin-bottom: 1rem;
 }
 .view-promoted {
-  padding: 1rem 0;
+  padding: 1rem 0 1.5rem;
 }
-.view-promoted .view-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-  grid-gap: 2.5rem;
+@media (min-width: 769px) {
+  .view-promoted .view-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    grid-gap: 2.5rem;
+  }
 }
 .view-promoted .view-content > div {
   margin-bottom: 1.5rem;
@@ -102,7 +117,6 @@ article:not(.comment) {
 .view-promoted article .links {
   align-self: flex-end;
 }
-
 
 .submitted {
   font-size: .95rem;
@@ -167,14 +181,6 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 1rem 0;
-}
-@media (min-width: 1025px) {
-  .block-hero {
-    font-size: 150%;
-  }
-  .block-hero .contextual-links {
-    font-size: initial;
-  }
 }
 .name-and-slogan {
   margin: 0 0 1rem;
@@ -264,11 +270,13 @@ h3 {
   font-weight: 800;
   font-style: italic;
   margin: 1.2rem 0;
+  line-height: 1.25;
 }
 h4,
 h5,
 h6 {
   margin: 1.2rem 0;
+  line-height: 1.3;
 }
 .site-name {
   font-family: Manuale, serif;
