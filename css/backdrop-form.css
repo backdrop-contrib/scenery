@@ -398,6 +398,7 @@ a.tabledrag-handle .handle {
   }
   .node-preview-container form {
     max-width: 1200px;
+    max-width: var(--max-row-width, 1200px);
     margin: 0 auto;
   }
   [dir=rtl] .node-preview-container {

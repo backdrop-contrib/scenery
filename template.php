@@ -26,8 +26,20 @@ function scenery_preprocess_page(&$variables) {
     $settings = array(
       'scenery' => '1',
       'customize' => FALSE,
+      'max_row_width' => 1200,
+      'max_article_width' => 900,
     );
   }
+  // Add inline css variable.
+  $style_var = ':root{';
+  $style_var .= '--max-row-width: ' . $settings['max_row_width'] . 'px;';
+  $style_var .= '--max-article-width: ' . $settings['max_article_width'] . 'px;';
+  $style_var .= '}';
+  backdrop_add_css($style_var, array(
+    'type' => 'inline',
+    'every_page' => TRUE,
+  ));
+
   // Add selected scenery.
   $scenery_file = backdrop_get_path('theme', $theme) . '/css/scenery-' . $settings['scenery'] . '.css';
   backdrop_add_css($scenery_file, array(

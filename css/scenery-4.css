@@ -20,9 +20,10 @@ a:hover {
 .l-footer {
   background-color: #f7f7f7;
 }
+.block-hero,
 .block-hero h2,
-.block-hero h3,
-.block-hero a {
+.block-hero h3 {
+  color: #888;
 }
 .site-name span {
   color: #ae8d8d;

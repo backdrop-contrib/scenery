@@ -35,6 +35,24 @@ function scenery_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value' => theme_get_setting('scenery', $theme_name),
     '#description' => t('Additionally to the header image, this also changes some text and background colors.'),
   );
+  $form['settings']['max_row_width'] = array(
+    '#type' => 'number',
+    '#title' => t('Max row content width'),
+    '#min' => 980,
+    '#max' => 2000,
+    '#field_suffix' => 'px',
+    '#default_value' => theme_get_setting('max_row_width', $theme_name),
+    '#description' => t('How wide layout container (row) content can get. Note: only the content, the header and footer backgrounds are not affected.'),
+  );
+  $form['settings']['max_article_width'] = array(
+    '#type' => 'number',
+    '#title' => t('Max article width'),
+    '#min' => 800,
+    '#max' => 1200,
+    '#field_suffix' => 'px',
+    '#default_value' => theme_get_setting('max_article_width', $theme_name),
+    '#description' => t('How wide article or comment content can get. This limit improves text readability on single-column layouts.'),
+  );
 
   $form['customize'] = array(
     '#type' => 'checkbox',

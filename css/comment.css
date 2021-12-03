@@ -1,9 +1,11 @@
 .comment-form {
   max-width: 900px;
+  max-width: var(--max-article-width, 900px);
   margin: 0 auto 2rem;
 }
 .comment {
   max-width: 900px;
+  max-width: var(--max-article-width, 900px);
   position: relative;
   display: block;
   padding: 0;
