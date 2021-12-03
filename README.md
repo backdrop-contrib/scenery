@@ -1,6 +1,10 @@
 # Scenery
 
-Adaptable theme with different sceneries, easy to configure, easy to extend with custom CSS.
+Adaptable theme with some predefined "sceneries".
+Easy to configure, easy to extend with custom CSS, all via user interface.
+
+A scenery is a header background image, accompanied by some text and
+ background colors for a harmonious overall impression.
 
 ## Installation
 
@@ -10,8 +14,10 @@ Adaptable theme with different sceneries, easy to configure, easy to extend with
 
 Select one of the sceneries on /admin/appearance/settings/scenery
 
-Optionally you can customize your scenery by, uploading a different header
-background image, and add some custom CSS code (via user interface).
+Optionally you can customize your scenery by uploading a different header
+ background image, and add some custom CSS code (via user interface).
+You'll be astounded, how little it needs to let your website look totally
+ different. Just an image and optionally some lines of CSS.
 
 ## Issues
 
