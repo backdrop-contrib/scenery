@@ -125,3 +125,6 @@
   border-color: currentColor transparent transparent transparent;
   margin-top: 0;
 }
+.comment-unpublished .comment-text {
+  background-image: url("../img/warn-bg.png");
+}

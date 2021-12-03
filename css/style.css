@@ -8,6 +8,10 @@ img {
   height: auto;
   vertical-align: bottom;
 }
+hr {
+  border: 1px solid;
+  border-color: #bbb transparent transparent transparent;
+}
 .layout,
 .layout-flexible-content {
   display: flex;
@@ -128,8 +132,11 @@ p {
 .l-header {
   background-size: cover;
   position: relative;
-  z-index: 2;
+  z-index: 1001;
   box-shadow: 0 0 10px #0005;
+}
+.admin-bar #admin-bar {
+  z-index: 1002;
 }
 .l-header-inner {
   padding: 1rem .9375rem 0;
@@ -252,6 +259,37 @@ p {
 .menu-dropdown a.has-submenu:hover {
   padding-right: 2rem !important;
 }
+/* No-js fallbacks */
+ul.menu-dropdown {
+  padding: 0;
+}
+.menu-dropdown li {
+  list-style: none;
+  position: relative;
+}
+.no-jscript .menu-dropdown ul {
+  padding: 0;
+  display: none;
+}
+.menu-dropdown a {
+  display: block;
+}
+.no-jscript .menu-dropdown ul a,
+.no-jscript .menu-dropdown ul a:hover {
+  padding: 1.2rem;
+  display: block;
+  font-size: 1rem;
+}
+.no-jscript .menu-dropdown li.expanded:hover ul {
+  display: block;
+  position: absolute;
+  top: 100%;
+  min-width: 12em;
+}
+.no-jscript .menu-dropdown li.expanded:hover ul ul {
+  top: 0;
+  left: 100%;
+}
 /** header end **/
 
 /** footer **/
@@ -315,7 +353,8 @@ h6 {
   }
 }
 article,
-.node-form {
+.node-form,
+.profile {
   max-width: 900px;
   margin: 0 auto 2rem;
 }
@@ -488,12 +527,9 @@ img.align-center {
   outline: 1px solid;
   padding: 4px 12px;
 }
-.comment-unpublished {
-  outline: 2px dashed red;
-}
 .unpublished-indicator {
-  padding: 4px 10px;
-  background: #ddd url("../img/progress-g.png");
+  padding: 15px;
+  background: #ddd url("../img/warn-bg.png");
 }
 .user-picture {
   width: 2.5em;
@@ -506,4 +542,10 @@ img.align-center {
   height: 12px;
   margin-right: 5px;
   clip-path: polygon(0 0, 3px 50%, 0 100%, 100% 50%);
+}
+.comment-add a::before {
+  content: "+";
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 4px;
 }

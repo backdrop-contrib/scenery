@@ -21,6 +21,8 @@
       }
     },
     attach: function (context, settings) {
+      $('html').removeClass('no-jscript');
+
       var menuInsideHeader = $('.l-header .block-system-main-menu').length;
       if (menuInsideHeader === 1) {
         Backdrop.behaviors.scenery.adjustOffset();

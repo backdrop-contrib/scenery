@@ -15,6 +15,8 @@ function scenery_preprocess_page(&$variables) {
   if ($admin_bar_sticky) {
     $variables['html_attributes']['class'][] = 'admin-bar-sticky';
   }
+  // Gets removed via js.
+  $variables['html_attributes']['class'][] = 'no-jscript';
 
   global $theme;
   $settings = config_get($theme . '.settings');
