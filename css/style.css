@@ -549,9 +549,20 @@ img.align-center {
   margin-right: 5px;
   clip-path: polygon(0 0, 3px 50%, 0 100%, 100% 50%);
 }
-.comment-add a::before {
-  content: "+";
-  font-weight: bold;
-  display: inline-block;
-  margin-right: 4px;
+table.responsive-enabled .priority-low,
+table.responsive-enabled .priority-medium {
+  display: none;
+}
+@media screen and (min-width: 551px) {
+  table.responsive-enabled .priority-medium {
+    display: table-cell;
+  }
+}
+@media screen and (min-width: 769px) {
+  table.responsive-enabled .priority-low {
+    display: table-cell;
+  }
+  .tableresponsive-toggle-columns {
+    display: none;
+  }
 }
