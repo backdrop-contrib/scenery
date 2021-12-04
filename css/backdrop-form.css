@@ -45,9 +45,6 @@ abbr.ajax-changed {
   text-decoration: none;
   padding: 0 4px;
 }
-tr.selected td {
-  background-color: #ffff0026;/* No color module switch. */
-}
 .form-item-radios label,
 .form-item-checkboxes label {
   display: block;
@@ -316,7 +313,7 @@ button.button-danger:focus {
 .draggable abbr.warning::before {
   content: "";
   display: block;
-  background-color: #fce400;/* Same as core, no color module switch. */
+  background-color: #fce400;
   position: absolute;
   left: 0;
   top: 0;
@@ -324,26 +321,13 @@ button.button-danger:focus {
   width: 6px;
 }
 tr.drag-previous td {
-  background-color: #ffff0026;/* No color module switch. */
+  background-color: #ffff0026;
 }
 .draggable a.tabledrag-handle {
   margin-left: -0.4em;
 }
 a.tabledrag-handle .handle {
   margin: -0.2em 0.5em;
-}
-.admin-dblog .dblog-error.even:not(:hover) .active,
-.admin-dblog .dblog-error.odd:not(:hover) .active {
-  background-color: inherit;
-}
-.admin-dblog .dblog-error.even td,
-.admin-dblog .dblog-error.odd td,
-.admin-dblog .dblog-error.even:hover td,
-.admin-dblog .dblog-error.odd:hover td {
-  background-color: #ff000021 !important;/* No color module switch. */
-}
-.admin-path tr:hover td {
-  background-color: #ffff003b;
 }
 .js .dropbutton-widget {
   border-color: #bbb;
