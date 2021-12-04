@@ -26,6 +26,7 @@
     z-index: 0;
     width: 15em;
     height: 100%;
+    background: #f0f0f0;
   }
   [dir="rtl"] .vertical-tabs:before {
     left: auto;
@@ -171,15 +172,15 @@
   display: none;
 }
 .vertical-tab-item {
-  background-color: #f0f0f0;
+  background-color: #f8f8f8;
   border-bottom: 1px solid #bbb;
 }
 .vertical-tab-item:last-child {
-  border-bottom: none;
+  margin-bottom: -1px;
 }
 .vertical-tab-item a:hover,
 .vertical-tab-item a:focus {
-  background-color: #f8f8f8;
+  background-color: #fff;
 }
 .vertical-tab-selected a,
 .vertical-tab-selected a:hover,

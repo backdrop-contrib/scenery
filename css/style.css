@@ -426,6 +426,9 @@ ul.primary li a:hover {
   background-color: #fff;
 }
 
+ul.secondary {
+  width: 100%;
+}
 ul.secondary a {
   padding: 8px 15px;
   background: #ddd;
@@ -576,4 +579,7 @@ table.responsive-enabled .priority-medium {
   .tableresponsive-toggle-columns {
     display: none;
   }
+}
+.update tr {
+  position: static;
 }

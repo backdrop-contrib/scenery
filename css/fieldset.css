@@ -11,6 +11,7 @@ fieldset {
   padding: 0 0 1em;
   display: block;
   border: 1px solid #bbb;
+  background: #fff;
 }
 fieldset legend {
   float: left;
