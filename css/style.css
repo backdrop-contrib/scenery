@@ -12,6 +12,14 @@ hr {
   border: 1px solid;
   border-color: #bbb transparent transparent transparent;
 }
+ul,
+ol,
+dl {
+  margin: 1rem 0;
+}
+dd {
+  margin-bottom: 1rem;
+}
 .layout,
 .layout-flexible-content {
   display: flex;
@@ -141,6 +149,9 @@ p {
 }
 .admin-bar #admin-bar {
   z-index: 1002;
+}
+.ui-dialog:not(.editor-dialog) {
+  z-index: 1003;
 }
 .l-header-inner {
   padding: 1rem .9375rem 0;
