@@ -8,6 +8,9 @@ img {
   height: auto;
   vertical-align: bottom;
 }
+img.file-icon {
+  vertical-align: middle;
+}
 hr {
   border: 1px solid;
   border-color: #bbb transparent transparent transparent;
