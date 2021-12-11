@@ -1,5 +1,6 @@
 <?php
 /**
+ * @file
  * Custom php code for the Scenery theme.
  */
 
@@ -119,7 +120,6 @@ function scenery_menu_local_task($variables) {
     $link['localized_options']['html'] = TRUE;
     $link_text = t('!local-task-title!active', array('!local-task-title' => $link['title'], '!active' => $active));
   }
-  $action = t($link['title'], array(), array('langcode' => 'en'));
   $path = explode('/', $link['path']);
   $options = $link['localized_options'];
   $options['attributes'] = array(
