@@ -43,6 +43,9 @@ a:hover {
 .l-page-title {
   border-bottom: 1px solid #888;
 }
+.front .l-page-title {
+  border-bottom: 0;
+}
 h1,
 h2,
 h3 {

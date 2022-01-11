@@ -46,6 +46,9 @@ a:hover {
 .l-page-title {
   border-bottom: 1px solid #828b95;
 }
+.front .l-page-title {
+  border-bottom: 0;
+}
 h1,
 h2 {
   color: #828b95;

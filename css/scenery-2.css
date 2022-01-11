@@ -49,6 +49,9 @@ a:hover {
 .l-page-title {
   border-bottom: 1px solid #717769;
 }
+.front .l-page-title {
+  border-bottom: 0;
+}
 .l-footer a,
 .l-footer h2 {
   color: #fff;

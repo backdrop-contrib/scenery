@@ -41,7 +41,7 @@ dd {
   border: none;
 }
 .block-hero {
-  margin: -1px -0.9375rem 3vh -0.9375rem;
+  margin: 0 -0.9375rem 3vh -0.9375rem;
   padding: 8vh 0.9375rem;
 }
 .block-hero .block-title,
@@ -75,11 +75,11 @@ dd {
     max-width: none;
   }
   .block-hero {
-    margin: -1px -5vw 3vh -5vw;
+    margin: 0 -5vw 3vh -5vw;
     padding: 8vh 5vw;
   }
   .flexible-row .block-hero {
-    margin: -1px -0.9375rem 3vh -0.9375rem;
+    margin: 0 -0.9375rem 3vh -0.9375rem;
   }
 }
 @media (min-width: 1025px) {
