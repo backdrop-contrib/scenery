@@ -9,6 +9,7 @@ stylesheets[all][] = css/fieldset.css
 stylesheets[all][] = css/backdrop-form.css
 stylesheets[all][] = css/vertical-tabs.css
 stylesheets[all][] = css/comment.css
+stylesheets[all][] = css/cards.css
 
 ckeditor_stylesheets[] = css/style.css
 

@@ -1,0 +1,35 @@
+/* Home page cards */
+.block-views-promoted-cards-block {
+  padding: 0;
+}
+.view-promoted-cards {
+  padding: 0;
+  margin: 2.5rem 0;
+}
+.view-promoted-cards .views-view-grid {
+  gap: 2.5rem;
+}
+.view-promoted-cards .views-grid-box {
+  border: none;
+  padding: 0;
+  max-width: 540px;
+}
+.view-promoted-cards .views-field-title h2 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+.view-promoted-cards .views-grid-box .views-field-field-image img {
+  -webkit-filter: hue-rotate(200deg) saturate(20%);
+  filter: hue-rotate(200deg) saturate(20%);
+}
+.view-promoted-cards .views-grid-box:hover .views-field-field-image img {
+  filter: none;
+}
+@media (max-width: 1024px) {
+  .view-promoted-cards .views-view-grid {
+    display: block;
+  }
+  .view-promoted-cards .views-grid-box {
+    margin: 0 auto 2rem;
+  }
+}
