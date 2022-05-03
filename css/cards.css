@@ -1,26 +1,49 @@
 /* Home page cards */
 .block-views-promoted-cards-block {
-  padding: 0;
+  padding: 1.5rem .9375rem;
+  background-color: #ececea;
+  margin: 0 -0.9375rem 3vh;
+}
+.block-hero + .block-views-promoted-cards-block {
+  margin-top: -3vh;
+}
+@media (min-width: 34em) {
+  .block-views-promoted-cards-block {
+    padding: 2.5rem .9375rem;
+    margin-left: -5vw;
+    margin-right: -5vw;
+  }
 }
 .view-promoted-cards {
   padding: 0;
-  margin: 2.5rem 0;
+  margin: 0;
+}
+.view-promoted-cards .views-view-grid-cols-3 {
+  max-width: 1700px;
+  margin: 0 auto;
 }
 .view-promoted-cards .views-view-grid {
   gap: 2.5rem;
 }
 .view-promoted-cards .views-grid-box {
   border: none;
-  padding: 0;
+  padding: 0 0 .5rem;
   max-width: 540px;
+  background-color: #fff;
+}
+.view-promoted-cards .views-field {
+  padding: 0 1rem;
+}
+.view-promoted-cards .views-field-field-image {
+  padding: 0;
 }
 .view-promoted-cards .views-field-title h2 {
   margin: 1rem 0;
   font-size: 2rem;
 }
 .view-promoted-cards .views-grid-box .views-field-field-image img {
-  -webkit-filter: hue-rotate(200deg) saturate(20%);
-  filter: hue-rotate(200deg) saturate(20%);
+  -webkit-filter: saturate(30%);
+  filter: saturate(30%);
 }
 .view-promoted-cards .views-grid-box:hover .views-field-field-image img {
   filter: none;
