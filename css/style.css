@@ -66,7 +66,8 @@ dd {
   }
   .container > *,
   .container .menu-dropdown,
-  .l-header .l-col {
+  .l-header .l-col,
+  .l-top .block-system-title-combo {
     max-width: 1200px;
     max-width: var(--max-row-width, 1200px);
     margin: 0 auto;
@@ -80,6 +81,9 @@ dd {
   }
   .flexible-row .block-hero {
     margin: 0 -0.9375rem 3vh -0.9375rem;
+  }
+  main.l-content {
+    padding: 0;
   }
 }
 @media (min-width: 1025px) {
@@ -248,10 +252,17 @@ p {
   color: #000;
   font-size: 1.3rem;
 }
-.l-page-title .page-title {
+.l-page-title .page-title,
+.block-system-title-combo .page-title {
   margin: 0;
   padding: 8vh 0 2vh;
   text-align: center;
+}
+.l-top .block-system-title-combo {
+  margin-bottom: 3rem;
+}
+.block-system-title-combo .page-title {
+  padding-top: 3vh;
 }
 /** this is all so broken in sm and/or core... */
 .js .menu-dropdown a,

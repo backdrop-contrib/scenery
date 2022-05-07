@@ -41,14 +41,10 @@ a:hover {
 .header-menu .links a:hover {
   outline: 1px solid;
 }
-.l-page-title .page-title {
+.l-page-title .page-title,
+.block-system-title-combo .page-title {
   color: #7d7771;
-}
-.l-page-title {
   border-bottom: 1px solid #9d8f77;
-}
-.front .l-page-title {
-  border-bottom: 0;
 }
 .l-footer a,
 .l-footer h2,

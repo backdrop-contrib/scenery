@@ -46,11 +46,9 @@ a:hover {
 .header-menu .links a:hover {
   outline: 1px solid;
 }
-.l-page-title {
+.l-page-title .page-title,
+.block-system-title-combo .page-title {
   border-bottom: 1px solid #717769;
-}
-.front .l-page-title {
-  border-bottom: 0;
 }
 .l-footer a,
 .l-footer h2 {
