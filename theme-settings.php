@@ -8,12 +8,6 @@
  * Implements hook_form_system_theme_settings_alter().
  */
 function scenery_form_system_theme_settings_alter(&$form, &$form_state) {
-  if (module_exists('color')) {
-    // Until #4463 is addressed.
-    // @see https://github.com/backdrop/backdrop-issues/issues/4463
-    $form_state['build_info']['args'][0] = NULL;
-  }
-
   $theme_name = $form['theme']['#value'];
   $path = backdrop_get_path('theme', 'scenery');
   $form['#attached']['css'] = array($path . '/css/scenery-admin.css');
