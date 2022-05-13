@@ -128,6 +128,15 @@ function _scenery_css_file($form, $form_state) {
   elseif (file_exists($destination)) {
     file_unmanaged_delete($destination);
   }
+  // Flush caches if necessary.
+  $core_config = config('system.core');
+  if ($core_config->get('preprocess_css')) {
+    _backdrop_flush_css_js();
+    backdrop_clear_css_cache();
+  }
+  if ($core_config->get('cache')) {
+    cache('page')->flush();
+  }
 }
 
 /**
