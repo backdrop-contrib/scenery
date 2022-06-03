@@ -145,6 +145,29 @@ function scenery_comment_view_alter(&$build) {
     );
     unset($build['links']['comment']['#links']);
   }
+  // Get rid of the empty link.
+  // @see scenery_preprocess_comment where we add the id to the article tag.
+  // @see https://github.com/backdrop/backdrop-issues/issues/5640
+  $remove = '<a id="comment-' . $build['#comment']->cid . '"></a>';
+  $build['#prefix'] = str_replace($remove, '', $build['#prefix']);
+}
+
+/**
+ * Implements template_preprocess_comment().
+ */
+function scenery_preprocess_comment(&$variables) {
+  $variables['attributes']['id'] = 'comment-' . $variables['comment']->cid;
+  if (!empty($variables['comment']->pid)) {
+    // Mention the parent if this is a reply - when visual indent isn't useful.
+    $parent_comment = comment_load($variables['comment']->pid);
+    $variables['title_suffix']['comment_parent'] = array(
+      '#type' => 'markup',
+      '#markup' => '<span class="element-invisible">' . t('In reply to') . ': ' . $parent_comment->subject . '</span>',
+    );
+  }
+  // Wrap the date in time tag, add ISO format.
+  $timestamp = $variables['comment']->created;
+  $variables['created'] = '<time datetime="' . format_date($timestamp, 'custom', DATE_FORMAT_ISO) . '">' . $variables['created'] . '</time>';
 }
 
 /**
