@@ -33,6 +33,13 @@ dd {
 .admin-bar .layout-flexible-content {
   min-height: calc(100vh - 33px);
 }
+.layout .layout,
+.admin-bar .layout .layout
+.layout .layout .layout-flexible-content,
+.admin-bar .layout .layout .layout-flexible-content {
+  min-height: 0;
+  display: block;
+}
 .layout .l-wrapper,
 .layout-flexible-content .flexible-row:nth-last-child(2) {
   flex-grow: 1;
@@ -63,6 +70,9 @@ dd {
   .container {
     max-width: none;
     padding: 0 5vw;
+  }
+  .layout .layout .container {
+    padding: 0;
   }
   .container > *,
   .container .menu-dropdown,
