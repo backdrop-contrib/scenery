@@ -79,6 +79,24 @@
   padding: 0;
   font-size: 1.125em;
 }
+.comment.comment-title-hidden .comment-title .permalink {
+  display: block;
+  width: 1em;
+  height: 1em;
+  float: left; /* LTR */
+  margin: 6px 8px 0 0; /* LTR */
+  text-indent: -333px;
+  overflow: hidden;
+  background-color: currentColor;
+  -webkit-mask-image: url("../img/permalink.svg");
+  mask-image: url("../img/permalink.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+[dir="rtl"] .comment.comment-title-hidden .comment-title .permalink {
+  float: right;
+  margin: 6px 0 0 8px;
+}
 .comment-time {
   padding: 6px 0;
   display: block;
