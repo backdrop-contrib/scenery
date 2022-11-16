@@ -1,0 +1,120 @@
+/**
+ * Override filter.css.
+ */
+.editor-image-library .view-content,
+.file-browser-view .view-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 125px);
+  gap: 7px;
+}
+.image-library-filename {
+  margin: 0;
+  max-width: 125px;
+  max-height: 18px;
+  font-size: 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.image-library-image {
+  margin: 0 auto;
+}
+.library-view.form-item {
+  margin-top: 0;
+}
+.image-library-choose-file {
+  display: grid;
+  align-content: end;
+  height: 125px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.image-library-choose-file:hover,
+.image-library-image-selected {
+  background-color: #e5f3ff;
+}
+.image-library-image-selected {
+  outline: 3px solid #a5cad9;
+}
+.file-managed-file-browser-form .form-actions {
+  height: 0;
+  overflow: hidden;
+}
+/** a little trickier... */
+@media (min-width: 32em) {
+  .editor-image-dialog .ui-dialog-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+.editor-dialog {
+  width: 100%;
+  max-width: 500px;
+  z-index: 9996 !important; /* To come above the full-screen CKEditor button. */
+  -webkit-transition: max-width .5s, left .5s, right .5s; /* For Safari 3.1 to 6.0 */
+  transition: max-width .5s, left .5s, right .5s;
+}
+.editor-dialog-with-library {
+  max-width: 92%;
+  left: 4% !important;
+}
+.editor-dialog .form-managed-file .form-file,
+.editor-dialog .form-managed-file .file {
+  max-width: 18em;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.editor-image-library {
+  flex-grow: 1;
+  background-color: #f9f9f9;
+  padding: 0 1rem;
+  margin: -0.5rem -1rem -0.5rem -1rem;
+}
+.ui-dialog-content {
+  font-size: 1rem;
+}
+.filter-format-editor-image-form {
+  max-width: 400px;
+}
+.editor-image-field input {
+  max-width: 100%;
+}
+.editor-image-toggle {
+  display: inline-block !important;
+}
+.editor-image-toggle.first::after {
+  content: '';
+  display: inline-block;
+  border-left: 1px solid;
+  height: .8rem;
+  padding: .5rem 0;
+  margin: 0 1rem -0.3rem 1rem;
+}
+/* Make sure image size items fall in line. */
+.editor-image-size .form-item,
+.editor-image-size .form-type-number input,
+.editor-image-size .form-type-number span {
+  display: inline;
+}
+.editor-image-size .form-number {
+  width: 30%;
+  max-width: 120px;
+}
+/* Make sure image alignment items fall in line. */
+.editor-image-align .form-item,
+.editor-image-align .form-item input,
+.editor-image-align .form-item label {
+  display: inline;
+}
+.editor-image-align label.option {
+  margin-right: 20px; /* LTR */
+}
+[dir="rtl"] .editor-image-align label.option {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.text-format-wrapper .form-type-textarea {
+  margin-bottom: 0;
+}
