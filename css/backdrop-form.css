@@ -17,11 +17,6 @@ label {
 .ui-widget button {
   font-family: 'Open Sans', verdana, sans-serif;
 }
-.image-library-choose-file,
-.image-library-choose-file:hover {
-  margin: 5px;
-  border-radius: 0;
-}
 .form-item,
 .field-name-comment-body {
   padding: 0;
