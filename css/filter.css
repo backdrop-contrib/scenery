@@ -92,6 +92,9 @@
   padding: .5rem 0;
   margin: 0 1rem -0.3rem 1rem;
 }
+.editor-image-size label {
+  display: block;
+}
 /* Make sure image size items fall in line. */
 .editor-image-size .form-item,
 .editor-image-size .form-type-number input,
