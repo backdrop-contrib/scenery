@@ -58,6 +58,20 @@ function scenery_preprocess_page(&$variables) {
       ));
     }
   }
+
+  // Add some css classes to body for easier styling.
+  $args = arg();
+  if (count($args) == 2 && $args[0] == 'node' && is_numeric($args[1])) {
+    $variables['classes'][] = 'page-node-' . $args[1];
+  }
+  elseif (count($args) == 3 && $args[0] == 'taxonomy' && $args[1] == 'term' && is_numeric($args[2])) {
+    $terms = entity_load('taxonomy_term', array($args[2]));
+    $term = reset($terms);
+    if ($term) {
+      $variables['classes'][] = 'page-taxonomy-vocab-' . $term->vocabulary;
+      $variables['classes'][] = 'page-taxonomy-term-' . $term->tid;
+    }
+  }
 }
 
 /**
