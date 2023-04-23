@@ -43,6 +43,9 @@ function scenery_preprocess_page(&$variables) {
 
   // Add selected scenery.
   $scenery_file = backdrop_get_path('theme', $theme) . '/css/scenery-' . $settings['scenery'] . '.css';
+  if (!file_exists($scenery_file)) {
+    $scenery_file = backdrop_get_path('theme', 'scenery') . '/css/scenery-' . $settings['scenery'] . '.css';
+  }
   backdrop_add_css($scenery_file, array(
     'every_page' => TRUE,
     'group' => CSS_THEME,
