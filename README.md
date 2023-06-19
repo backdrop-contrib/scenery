@@ -19,6 +19,14 @@ Optionally you can customize your scenery by uploading a different header
 You'll be astounded, how little it needs to let your website look totally
  different. Just an image and optionally some lines of CSS.
 
+### Deploying with a custom image in settings
+
+When saving the theme's setting form, a CSS file with an absolute URL to the image is generated.
+If the domain changes later, for example if you uploaded the site from your
+development space to its final destination, it's necessary to save the settings form again.
+That will update the image URL to the current one.
+Saving the form is also necessary, if you switch from HTTP to HTTPS.
+
 ## Issues
 
 Bugs and Feature requests should be reported in the
