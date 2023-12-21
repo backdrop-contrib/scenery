@@ -116,6 +116,28 @@ function scenery_ckeditor_settings_alter(&$settings, $format) {
 }
 
 /**
+ * Implements hook_tinymce_options_alter().
+ */
+function scenery_tinymce_options_alter(array &$options, $format) {
+  global $base_path, $theme;
+  $path = backdrop_get_path('theme', $theme);
+
+  $scenery = theme_get_setting('scenery', $theme);
+  if ($scenery) {
+    $stylesheet = $path . '/css/scenery-' . $scenery . '.css';
+    if (file_exists($stylesheet)) {
+      $options['tiny_options']['content_css'][] = $base_path . $stylesheet;
+    }
+  }
+  else {
+    $default = $path . '/css/scenery-1.css';
+    if (file_exists($default)) {
+      $options['tiny_options']['content_css'][] = $base_path . $default;
+    }
+  }
+}
+
+/**
  * Implements theme_menu_local_task().
  */
 function scenery_menu_local_task($variables) {

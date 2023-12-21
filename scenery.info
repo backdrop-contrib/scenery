@@ -13,6 +13,7 @@ stylesheets[all][] = css/comment.css
 stylesheets[all][] = css/cards.css
 
 ckeditor_stylesheets[] = css/style.css
+tinymce_content_css[] = css/style.css
 
 scripts[] = js/scenery.js
 
