@@ -99,7 +99,11 @@ function scenery_form_system_theme_settings_alter(&$form, &$form_state) {
     $form['custom']['css']['#description'] = $text;
   }
   // Strange... why do I have to set the system function?
-  $form['#submit'] = array('_scenery_css_file', '_scenery_file_usage', 'system_theme_settings_submit');
+  $form['#submit'] = array(
+    '_scenery_css_file',
+    '_scenery_file_usage',
+    'system_theme_settings_submit',
+  );
 }
 
 /**

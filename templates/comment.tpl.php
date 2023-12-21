@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Basis' theme implementation for comments.
@@ -77,9 +76,9 @@
 
     <div class="content"<?php print backdrop_attributes($content_attributes); ?>>
       <?php
-        // We hide the comments and links now so that we can render them later.
-        hide($content['dropbutton']);
-        print render($content);
+      // We hide the comments and links now to render them later.
+      hide($content['dropbutton']);
+      print render($content);
       ?>
     </div> <!-- /.content -->
 
