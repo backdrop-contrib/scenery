@@ -41,7 +41,7 @@
 }
 /** a little trickier... */
 @media (min-width: 32em) {
-  .editor-image-dialog .ui-dialog-content {
+  .editor-image-dialog .ui-dialog-content > form {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -75,7 +75,7 @@
 .ui-dialog-content {
   font-size: 1rem;
 }
-.filter-format-editor-image-form {
+.filter-format-editor-image-form .image-form-wrapper {
   max-width: 400px;
 }
 .editor-image-field input {
