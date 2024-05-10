@@ -9,7 +9,15 @@
       var menuHeight = $('.l-header .block-system-main-menu').height();
       var offset = Math.round(-1 * (headerHeight - menuHeight));
       if ($('html.admin-bar.admin-bar-sticky').length) {
-        offset += 33;
+        // Get admin-bar height indirectly from border, so it's pixel based.
+        let adminBarHeight = getComputedStyle(document.body).borderTopWidth;
+        // Prevent ending up with NaN.
+        if (adminBarHeight) {
+          offset += parseInt(adminBarHeight, 10);
+        }
+        else {
+          offset += 33;
+        }
       }
       if (menuHeight > $(window).height()) {
         $('.l-header').css({'position': 'relative', 'top': 'auto'});

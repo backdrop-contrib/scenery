@@ -31,7 +31,7 @@ dd {
 }
 .admin-bar .layout,
 .admin-bar .layout-flexible-content {
-  min-height: calc(100vh - 33px);
+  min-height: calc(100vh - var(--admin-bar-height, 33px));
 }
 .layout .layout,
 .admin-bar .layout .layout
