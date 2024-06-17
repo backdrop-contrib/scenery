@@ -2,7 +2,7 @@
  * Override filter.css.
  */
 .editor-image-library .view-content,
-.file-browser-view .view-content {
+.view-image-library .view-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, 125px);
   gap: 7px;
