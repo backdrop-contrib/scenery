@@ -17,6 +17,9 @@ label {
 .ui-widget button {
   font-family: 'Open Sans', verdana, sans-serif;
 }
+.ui-widget a.button {
+  color: #fff;
+}
 .form-item,
 .field-name-comment-body {
   padding: 0;
