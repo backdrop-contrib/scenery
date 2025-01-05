@@ -615,3 +615,25 @@ table.responsive-enabled .priority-medium {
 .update tr {
   position: static;
 }
+.user-simplified-page-body {
+  background-color: #ececea;
+}
+.user-simplified-page-wrapper .site-name span {
+  color: inherit;
+  text-shadow: none;
+}
+.maintenance-page {
+  background-color: #ececea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+.maintenance-page .l-container {
+  background-color: #fff;
+  padding: 1.5em;
+  box-shadow: 0 5px 15px #0003;
+  max-width: 54em;
+  margin: 0 1em;
+}
