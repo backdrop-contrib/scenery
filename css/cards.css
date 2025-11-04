@@ -23,7 +23,7 @@
   margin: 0 auto;
 }
 .view-promoted-cards .views-view-grid {
-  gap: 2.5rem;
+  gap: var(--views-responsive-grid--layout-gap, 2.5rem);
 }
 .view-promoted-cards .views-grid-box {
   border: none;
