@@ -325,7 +325,8 @@ tr.drag-previous td {
   margin-left: -0.4em;
 }
 a.tabledrag-handle .handle {
-  margin: -0.2em 0.5em;
+  font-size: 1.5em;
+  margin-block: 2px;
 }
 .js .dropbutton-widget {
   border-color: #bbb;
@@ -398,9 +399,6 @@ fieldset input.form-autocomplete {
   .js input.form-autocomplete {
     max-width: 300px;
   }
-}
-a.tabledrag-handle .handle {
-  background: url("../img/icons/grippie.svg") no-repeat 6px 7px;
 }
 .action-links .add a::before,
 .comment-add a::before {
