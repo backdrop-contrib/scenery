@@ -37,12 +37,12 @@
 
         var wResizeTimer;
         var mResizeTimer;
-        $(window).resize(function () {
+        $(window).on('resize', function () {
           clearTimeout(wResizeTimer);
           wResizeTimer = setTimeout(Backdrop.behaviors.scenery.adjustOffset, 250);
         });
 
-        $('.l-header .sm .sub-arrow, .l-header .menu-toggle-button').click(function (event) {
+        $('.l-header .sm .sub-arrow, .l-header .menu-toggle-button').on('click', function (event) {
           clearTimeout(mResizeTimer);
           mResizeTimer = setTimeout(Backdrop.behaviors.scenery.adjustOffset, 350);
         });
@@ -50,6 +50,6 @@
       }
     }
 
-  }
+  };
 
 })(jQuery);
